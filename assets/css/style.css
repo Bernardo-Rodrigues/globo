@@ -1,27 +1,28 @@
 body {
   font-family: "Encode Sans", sans-serif;
 }
-.container {
+main,
+section {
   margin: auto;
   max-width: 1250px;
   display: flex;
   margin-bottom: 50px;
 }
-.header-logo {
+header a {
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header img {
+header img {
   height: 36px;
 }
-.header-sections {
+nav {
   border-top: 1px solid #f5f6f7;
   border-bottom: 1px solid #f5f6f7;
   margin-bottom: 30px;
 }
-.area-sections {
+ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +31,7 @@ body {
   font-weight: bold;
   margin: auto;
 }
-.area-sections a {
+ul li {
   text-decoration: none;
 }
 .g1 {
@@ -189,7 +190,7 @@ body {
 .right-b-unique-news .title {
   color: #ec8006;
 }
-.columns {
+section {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -323,39 +324,5 @@ body {
     min-width: 250px;
     max-width: 250px;
     height: 200px;
-  }
-}
-@media (max-width: 700px) {
-  .valor,
-  .cartola,
-  .dropz,
-  .quem,
-  .receitas {
-    display: none;
-  }
-  .area-sections {
-    justify-content: space-evenly;
-  }
-  .left-top-news {
-    flex-direction: column;
-    border: 0;
-  }
-  .left-unique-news img {
-    width: 100%;
-    height: auto;
-  }
-  .left-unique-news:hover .img-hover {
-    display: none;
-  }
-  .left-unique-news {
-    padding: 15px 0;
-    border-top: 4px solid #ebedef;
-    border-bottom: 4px solid #ebedef;
-  }
-  .right-section {
-    border: 0;
-  }
-  .columns {
-    padding-left: 15px;
   }
 }
